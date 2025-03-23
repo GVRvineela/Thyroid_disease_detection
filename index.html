@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>ThyroAlert - home</title>
+  <meta name="title" content="ThroAlert - home">
+  <meta name="description" content="This is a medical html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <div id="thyro">
+          <img src="./assets/images/logo1.png" width="60" height="60" alt="ThyroAlert home">
+          <p><h2 id="abcd">ThyroAlert</h2></p>
+        </div>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="136" height="46" alt="ThroAlert home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link title-md">About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./about.html" class="navbar-link title-md">ThyroTalk</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./help.html" class="navbar-link title-md">ThyroHelp</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./1mintest.html" class="navbar-link title-md">1min Test</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="http://localhost:3000" class="navbar-link title-md">Start Assesment</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#faq" class="navbar-link title-md">Faqs</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="#" class="btn has-before title-md">Login</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before" data-reveal="left">Welcome To ThyroAlert</p>
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              Detect. <br>
+              Prevent. Thrive.
+            </h1>
+
+            <!-- <div class="hero-card" data-reveal="left">
+
+              <p class="title-lg card-text">
+                Search doctors. clinics. hospitals. etc.
+              </p>
+
+              <div class="wrapper">
+
+                <div class="input-wrapper title-lg">
+                  <input type="text" name="location" placeholder="Locations" class="input-field">
+
+                  <ion-icon name="location"></ion-icon>
+                </div>
+
+                <button class="btn has-before">
+                  <ion-icon name="search"></ion-icon>
+
+                  <span class="span title-md">Find Now</span>
+                </button>
+
+              </div>
+
+            </div>-->
+
+          </div> 
+
+          <figure class="hero-banner" data-reveal="right" id="doctor2">
+            <img src="./assets/images/combined(1).png" loading="eager" alt="hero banner" class="w-100" style="width: 815px; height: 478px;">
+        </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-label="service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <!-- <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon"> -->
+                  <i class="fa-solid fa-user-doctor fa-5x " style='color: #0B60B0'></i>
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="./about.html">Thyroid</a>
+                </h3>
+
+                <p class="card-text">
+                  Thyroid is a small, butterfly-shaped gland located at the front of your neck under your skin. Thyroid is an important endocrine gland that makes and releases certain hormones.
+                </p>
+
+                <a href="./about.html" class="btn-circle" aria-label="read more about thyroid">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <!-- <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon"> -->
+                  <!-- <i class="fa-solid fa-house-medical fa-5x"></i> -->
+                  <i class="fa-solid fa-stethoscope fa-5x" style='color: #0B60B0'></i>
+                  <!-- <i class="fa-duotone fa-house-medical"></i> -->
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="about.html#hypo">Hypothyroid</a>
+                </h3>
+
+                <p class="card-text">
+                  Hypothyroidism happens when the thyroid gland doesn't make enough thyroid hormone. This condition also is called underactive thyroid.
+                </p>
+                <br>
+              
+
+                <!-- <button class="btn-circle" aria-label="read more about Gynecology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button> -->
+
+                <a href="./about.html#hypo" class="btn-circle" aria-label="read more about hypothyroid">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <!-- <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon"> -->
+                  <i class="fa-solid fa-kit-medical fa-5x" style='color: #0B60B0'></i>
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="About.html#hyper">Hyperthyroid</a>
+                </h3>
+
+                <p class="card-text">
+                  Hyperthyroidism happens when the thyroid gland makes too much thyroid hormone. This condition also is called overactive thyroid.
+                </p>
+                <br>
+                <br>
+
+                <!-- <button class="btn-circle" aria-label="read more about Pulmonology">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button> -->
+
+                <a href="./about.html#hyper" class="btn-circle" aria-label="read more about hyperthyroid">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <!-- <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon"> -->
+                  <i class="fa-solid fa-clipboard-list fa-5x" style='color: #0B60B0'></i>
+                </div>
+
+                <h3 class="headline-sm card-title">
+                  <a href="1mintest.html">1-Min Test</a>
+                </h3>
+
+                <p class="card-text">
+                  Thyroid troubles? Let's uncover them together.
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!-- <button class="btn-circle" aria-label="read more about Orthopedics">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button> -->
+
+                <a href="./1mintest.html" class="btn-circle" aria-label="read more about 1mintest">
+                  <ion-icon name="arrow-forward" aria-hidden="true" id="about"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-labelledby="about-label">
+        <div class="container" id="about">
+
+          <div class="about-content" >
+
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">About Us</p>
+
+            <h2 class="headline-md" data-reveal="left">What is the purpose of THYROALERT ?</h2>
+
+            <p class="section-text" data-reveal="left">
+              At ThyroAlert, we are dedicated to revolutionizing thyroid health management through our cutting-edge website. Our mission is to empower individuals with knowledge, facilitate early detection of thyroid disorders, and provide ongoing support for a healthier life.
+            </p>
+
+            <!-- <ul class="tab-list" data-reveal="left">
+
+              <li>
+                <button class="tab-btn active">Vision</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Mission</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Strategy</button>
+              </li>
+
+            </ul> -->
+
+            <p class="tab-text" data-reveal="left">
+              From detection to prevention: we are your partner in thyroid wellness.
+            </p>
+
+            <div class="wrapper">
+
+              <ul class="about-list">
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">1-Min Test for people in doubt.</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Assesment based on blood reports.</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Personalized tips and diet plan.</span>
+                </li>
+
+                <li class="about-item" data-reveal="left">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+                  <span class="span">Personalized exercises.</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="right">
+            <img src="./assets/images/doctor1.png" width="554" height="678" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #LISTING
+      -->
+
+      <section class="section listing" aria-labelledby="listing-label">
+        <div class="container">
+
+          <!-- <ul class="grid-list"> -->
+
+            <!-- <li> -->
+              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Self Check</p>
+
+              <h2 class="headline-md" data-reveal="left">How to check Thyroid at home?</h2>
+            <!-- </li> -->
+
+            <!-- <li> -->
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <!-- <h3 class="headline-sm card-title">Hypothyroid</h3> -->
+
+                  <p class="card-text">Start by identifying where your thyroid is located. Generally, you’ll find the thyroid on the front of your neck, between your collar bone and Adam’s apple. In men, the Adam’s apple is much easier to see. For women, it’s usually easiest to look from the collar bone up.
+                    Tip your head back while looking in a mirror. Look at your neck and try to hone in on the space you will be looking once you start the exam.
+                    Once you’re ready, take a drink of water while your head is tilted back. Watch your thyroid as you swallow. During this test, you’re looking for lumps or bumps. You may be able to see them when you swallow the water.
+                    Repeat this test a few times to get a good look at your thyroid. If you see any lumps or bumps, reach out to your healthcare provider.</p>
+                
+
+              </div>
+            <!-- </li> -->
+
+            <!-- <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Gynecology</h3>
+
+                  <p class="card-text">Mattis augue</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Pulmonology</h3>
+
+                  <p class="card-text">Mauris laoreet</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Orthopedics</h3>
+
+                  <p class="card-text">Convallis vulputate</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Pediatrics</h3>
+
+                  <p class="card-text">Posuere maecenas</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Osteology</h3>
+
+                  <p class="card-text">Nisi nullam</p>
+                </div>
+
+              </div>
+            </li> -->
+
+          <!-- </ul> -->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container" id="faq">
+
+          <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
+            News & Article
+          </p>
+
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Frequently Asked Questions</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                  <!-- <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+
+                    <span class="span">By Admin</span>
+                  </div>
+
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+
+                    <span class="span">Specialist</span>
+                  </div>
+
+                </div> -->
+
+                <h3 class="headline-sm card-title">What is a normal thyroid test range? </h3>
+
+                <!-- <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time> -->
+
+                <p class="card-text">
+                  A normal thyroid test range varies slightly based on the lab, but it typically falls within the following guidelines:
+                            TSH (thyroid-stimulating hormone): 0.3-4.5 mIU/L (10.3-362.9 pmol/L)
+                           Free T4 (thyroxine): 80-160 pmol/L
+                          Free T3 (triiodothyronine): 20-60 pmol/L   
+                </p>
+                <br>
+                <br>
+
+                <!-- <a href="#" class="btn-text title-lg">Read More</a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                  <!-- <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon> -->
+
+                    <!-- <span class="span">By Admin</span>
+                  </div>
+
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+
+                    <span class="span">Specialist</span>
+                  </div> -->
+
+                <!-- </div> -->
+
+                <h3 class="headline-sm card-title">What are the benefits of a TSH test? </h3>
+
+                <!-- <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time> -->
+
+                <p class="card-text">
+                  A TSH test provides valuable information about your thyroid function. An elevated TSH level may indicate an underactive thyroid (hypothyroidism), while a decreased TSH level may indicate an overactive thyroid (hyperthyroidism). Additionally, a normal TSH level is essential for proper thyroid hormone production.
+                </p>
+
+                <!-- <a href="#" class="btn-text title-lg">Read More</a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+
+                <div class="meta-wrapper">
+
+                  <!-- <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+
+                    <span class="span">By Admin</span>
+                  </div>
+
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+
+                    <span class="span">Specialist</span>
+                  </div>
+
+                </div> -->
+
+                <h3 class="headline-sm card-title">Can thyroid disorders be prevented?</h3>
+
+                <!-- <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time> -->
+
+                <p class="card-text">
+                  While not always preventable, maintaining a balanced diet, managing stress, and avoiding excessive iodine intake may contribute to thyroid health.
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!-- <a href="#" class="btn-text title-lg">Read More</a> -->
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <!-- <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="section footer-top">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo1.png" width="136" height="46" loading="lazy" alt="ThroAlert home">
+            <p>ThyroAlert</p>
+          </a>
+
+          <ul class="contact-list has-after">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="mail-open-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Main Email : <a href="mailto:contact@website.com" class="contact-link">thyroalert@gmail.com</a>
+                </p>
+
+                <p>
+                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Mobile : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
+                </p>
+
+                <p>
+                  Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+         <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">About Us</p>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+          </p>
+
+          <address class="address">
+            <ion-icon name="map-outline"></ion-icon>
+
+            <span class="text">
+              2416 Mapleview Drive <br>
+              Tampa, FL 33634
+            </span>
+          </address>
+
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Listing</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">How It Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">What We Offer</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Latest News</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">Join as a Doctor</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">New Guests List</a>
+          </li>
+
+          <li>
+            <a href="#" class="text footer-link">The Team List</a>
+          </li>
+
+        </ul> -->
+
+        <!-- <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Subscribe</p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email" placeholder="Email" class="input-field title-lg">
+
+            <button type="submit" class="btn has-before title-md">Subscribe</button>
+          </form>
+
+          <p class="text">
+            Get the latest updates via email. Any time you may unsubscribe
+          </p>
+
+        </div>
+
+      </div> -->
+<!-- 
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; ThyroAlert 2024 | All Rights Reserved.
+        </p> -->
+
+        <!-- <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+        </ul> -->
+
+      <!-- </div>
+
+    </div>
+  </footer>  -->
+  <!-- <footer class="footer" style="background-image: url('./assets/images/footer-bg.png');"> -->
+    <div class="footerBottom">
+    <!-- <p>Copyright &copy;2024,THYROALERT All rights reserved.     Contact us at: thyroalert621@gmail.com</p> -->
+    <div class="item-icon">
+        <ion-icon name="mail-open-outline"></ion-icon>
+      </div>
+    <p><pre>Copyright &copy; 2024, THYROALERT&nbsp;All rights reserved.                      Email: thyroalert621@gmail.com</pre></p>
+
+</div></footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

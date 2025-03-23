@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Body */
+body
+{
+    background-color: #2b5293;
+    background-image: linear-gradient(315deg, #5e8ddb 0%, #ffffff 75%);
+    color: #002f41;
+    font-family: 'Open Sans', Arial;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+body.dark-mode
+{
+    /*background-color: #333;
+    color: #fff;*/
+
+    background-color: #2b5293;
+    background-image: linear-gradient(315deg, #2053A7 0%, #000000 75%);
+    color: #daf5ff;
+}
+
+/* Navbar Colour */
+.bg-navbar
+{
+    background-color: #2B5293;
+    color: #000;
+}
+
+body.dark-mode .bg-navbar
+{
+    background-color: #000f5f;
+}
+
+/* Tips Colour */
+.bg-tips
+{
+    background-color: #2b5293;
+    background-image: linear-gradient(315deg, #5e8ddb 0%, #ffffff 75%);
+    color: #002f41;
+    font-family: 'Open Sans', Arial;
+}
+
+body.dark-mode .bg-tips
+{
+    background-color: #2b5293;
+    background-image: linear-gradient(315deg, #2053A7 0%, #000000 75%);
+    color: #daf5ff;
+}
+
+/* Button Colour */
+.btn
+{
+    background-color: #2B5293;
+    color: #fff;
+}
+
+body.dark-mode .btn
+{
+    background-color: #000F5F;
+}
+
+/* Cards Colour */
+
+.card-colour
+{
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .card-colour
+{
+    background-color: linear-gradient(90deg, #020024 0%, #090979 35%, #00D4FF 100%);
+}
+
+/* Custom CSS to highlight active link */
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffffff; /* Change to your preferred text color */
+  /* background-color: #007bff; Change to your preferred highlight color */
+}

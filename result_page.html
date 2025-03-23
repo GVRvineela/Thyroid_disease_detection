@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>ML API - Result</title>
+    <style>
+        p#no-tips {
+            text-align: center;
+            /* margin-top: 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Thyroid Prediction Result</h1>
+        <p><center id="pred">{{ prediction_text }}</center></p>
+        {% if prediction_text == "Thyroid type is HYPOTHYROID" %}
+            <!-- <p>Hypothyroid Tips: Include foods rich in iodine and selenium in your diet.</p> -->
+            <section class="container mt-4">
+                <!--Hypothyroid-->
+                <h1 align = "center"><strong> Suggestions </strong></h1>
+                <h2 align = "left"><strong> Tips </strong></h2>
+                <br>
+                <div class="row">
+                    <!-- Tip boxes -->
+            
+                    <!--Tip 1-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Medication Adherence </strong> </h5>
+                                <p class="card-text"> Take prescribed thyroid hormone replacement medication as directed by your healthcare provider. Consistent medication adherence is crucial for managing hypothyroidism. </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!--Tip 2-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Balanced Diet </strong> </h5>
+                                <p class="card-text"> Consume a well-balanced diet rich in nutrients, including iodine, selenium, and zinc, which are essential for thyroid function. Foods like seafood, dairy, nuts, and whole grains can be beneficial. </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!--Tip 3-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Regular Exercise </strong></h5>
+                                <p class="card-text"> Engage in regular physical activity as it can help boost metabolism and alleviate symptoms of fatigue often associated with hypothyroidism. Consult your doctor before starting any new exercise routine. </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!--Tip 4-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Stress Management </strong></h5>
+                                <p class="card-text"> Practice stress-reduction techniques such as yoga, meditation, or deep breathing exercises. Stress can affect thyroid function, so managing it is essential. </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!--Tip 5-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Regular Monitoring </strong></h5>
+                                <p class="card-text"> Schedule regular check-ups with your healthcare provider to monitor thyroid hormone levels. Adjustments to medication dosage may be necessary based on test results. </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!--Tip 6-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Adequate Sleep </strong></h5>
+                                <p class="card-text"> Ensure you get enough quality sleep as it plays a significant role in overall health and can impact thyroid function and hormone levels. </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!--Tip 7-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body bg-tips">
+                                <h5 class="card-title"><strong> Limit Goitrogenic Foods </strong></h5>
+                                <p class="card-text"> Some foods like soy, cabbage, and kale may interfere with thyroid function. While these foods are healthy, consuming them in excess might affect thyroid hormone production. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="container mt-4">
+                    <!--Hypothyroid-->
+                    <h2 align = "center"><strong> Dietary Tips For Hypothyroid </strong></h2>
+                    <br>
+                    <div class="row">
+                        <!-- Tip boxes -->
+                
+                        <!--Tip 1-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Iodine - Rich Foods </strong> </h5>
+                                    <p class="card-text"> Incorporate iodine sources like iodized salt, seaweed, fish, dairy, and eggs into your diet, as iodine is essential for thyroid hormone production. </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!--Tip 2-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Selenium </strong> </h5>
+                                    <p class="card-text"> Include selenium-rich foods like Brazil nuts, seafood, poultry, eggs, and sunflower seeds. Selenium helps in converting thyroid hormones into their active form.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!--Tip 3-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Gluten-free Options </strong></h5>
+                                    <p class="card-text"> Some people with hypothyroidism find that a gluten-free diet can help alleviate symptoms. Consider trying gluten-free grains like quinoa, rice, and buckwheat. </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!--Tip 4-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Limit Goitrogenic Foods </strong></h5>
+                                    <p class="card-text"> Goitrogens can interfere with thyroid function. Foods like cabbage, broccoli, cauliflower, kale, and soy should be eaten in moderation, especially if raw. </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!--Tip 5-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Balanced Diet </strong></h5>
+                                    <p class="card-text"> Focus on a balanced diet with whole foods, including lean proteins, healthy fats (like avocados, nuts, and olive oil), and complex carbohydrates (such as whole grains, fruits, and vegetables). </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!--Tip 6-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Monitor Soy Intake </strong></h5>
+                                    <p class="card-text"> Soy contains compounds that can interfere with thyroid hormone absorption. Limit soy consumption and opt for fermented soy products like tempeh and miso. </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!--Tip 7-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-body bg-tips">
+                                    <h5 class="card-title"><strong> Limit Processed Foods </strong></h5>
+                                    <p class="card-text"> Reduce intake of processed foods, refined sugars, and excessive caffeine as they can negatively impact thyroid function and overall health. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <br><br>
+                    <hr style="height:2px;border-width:0;color:black;background-color:black">
+                    <br><br>
+                    <p><h2>Physical Wellness</h2></p>
+                    <p>
+                        Yoga asanas are considered to be an effective natural remedy for dealing with thyroid disorders. While it may not be able to cure the condition instantly, it can help in keeping the glands healthy and regulate metabolism, thereby preventing any further complications. A study stated that 6 months of intense yoga helped women with hypothyroidism and reduced their need for thyroxine medication.
+                    Here are a few yoga asanas which can help in effectively reducing hypothyroidism. These yoga poses can help in strengthening muscles and also reducing effects of hypothyroidism on the body.
+                    </p>
+                    <p class="head">1. Viparita Karani (Inverted Pose)</p>
+                    <div class="abcd">
+                        <div>
+                            <p>
+                                This pose is also known as the legs up the wall pose. It is helpful for various ailments including hypothyroidism. It increases blood flow to the thyroid gland and regulates thyroid function. Besides, this pose has a rejuvenating effect on the mind. It also helps in relieving stress, curing insomnia and fighting anxiety.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="{{ url_for('static', filename='images/yoga.jpg') }}" class="yoga" alt="Yoga Image">
+                        </div>
+                    </div>
+                    <p class="head">2. Sarvangasana (shoulder stand)</p>
+                    <p>
+                        Sarvangasana or shoulder stand helps in maintaining the governing system of the body - the endocrine system. It exerts pressure on the thyroid gland. Thyroid gland receives the largest supply of blood. Sarvangasana helps in improving blood circulation and squeezing stagnant secretion. It releases blood into the neck and helps nourish the thyroid and reversing hypothyroidism.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga2.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p class="head">3. Ustrasana (Camel Pose)</p>
+                    <p>
+                        This pose too can stimulate the thyroid gland by stretching the neck and increasing blood circulation in the gland. Practicing this yoga pose for thyroid can also help in relieving issues of the spine. It also helps in bringing relief to people suffering from asthma. However, this pose should be avoided I case you have hernia or ulcers. People with arthritis, vertigo and abdominal injuries should avoid doing the camel pose.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga3.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p class="head">4. Setu Bandhasana (bridge pose)</p>
+                    <p>
+                        Setu bandhasana or the bridge pose is an effective yoga for thyroid, especially hypothyroidism. It stretches the neck and improves blood circulation in the thyroid gland. The pose is also effective for treating asthma, reducing headaches and strengthening muscles. People in the final stage of their pregnancy should avoid doing the bridge pose.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga4.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p class="head">5. Halasana (plough pose)</p>
+                    <p>
+                        This pose helps in stretching of the neck and stimulates the thyroid glands. However, this pose must not be performed by people with hyperthyrodisim as it facilitates secretion of thyroid hormones. This pose also helps in strengthening abdominal muscles and back muscles along with relaxing the autonomous nervous systems.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga5.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p class="head">6. Matsyasana (fish pose)</p>
+                    <p>
+                        Matsyasana or fish pose makes your back arch in a way that it increased blood circulation in the thyroid gland. This pose stretches the neck and throat and stimulates the thyroid gland. It relieves a lot of tension in the area. The pose is done by inverting the head. This encourages blood flow to the thyroid gland and is thus good for people suffering from hypothyroidism. This pose also helps in maintaining health of abdominal muscles and the spinal column.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga6.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p class="head">7. Dhanurasana (bow pose)</p>
+                    <p>
+                        This yoga pose for thyroid massages the thyroid gland and compels it to produce the required amount of thyroid hormone for controlling metabolism. It is thus an effective pose for treating with hypothyroidism. This pose helps in strengthening of back, reducing stress and relieving menstrual pain.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga7.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p class="head">8. Bhujangasana (cobra pose)</p>
+                    <p>
+                        This pose is a part of the very beneficial surya namaskar. This pose stretches the neck and throat region, thereby increasing thyroid functioning. It is helpful for people suffering from hypothyroidism. People with back pain or neck pain should also do bhujangasana as it helps in strengthening and toning of muscles. Avoid this pose in case you have recently undergone an abdominal surgery or have hernia or ulcers.
+                    </p>
+                
+        {% elif prediction_text == "Thyroid type is HYPERTHYROID" %}
+            <!-- <p>Hyperthyroid Tips: Limit intake of high-iodine foods and consider consulting a healthcare professional.</p> -->
+            <h1 align = "center"><strong> Suggestions </strong></h1>
+            <h2 align = "left"><strong> Tips </strong></h2>
+    <br>
+    <div class="row">
+        <!-- Tip boxes -->
+
+        <!--Tip 1-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Medical Treatment </strong> </h5>
+                    <p class="card-text"> Consult with a healthcare professional for proper diagnosis and treatment. Depending on the severity, treatment options might include medication, radioactive iodine therapy, or surgery to manage hyperthyroidism. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 2-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Medication Compliance </strong> </h5>
+                    <p class="card-text"> If prescribed medication, take it as directed by your doctor. Antithyroid drugs or beta-blockers may be used to regulate thyroid hormone levels and manage symptoms like rapid heartbeat and tremors. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 3-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Limit Goitrogenic Foods </strong></h5>
+                    <p class="card-text"> Similar to hypothyroidism, minimize goitrogenic foods like broccoli, cauliflower, cabbage, kale, and soy products, as they can interfere with thyroid function. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 4-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Healthy Diet </strong></h5>
+                    <p class="card-text"> Consume a well-balanced diet that includes nutrients like calcium, selenium, and vitamin D. Limiting iodine-rich foods (e.g., seaweed) can help reduce thyroid hormone production. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 5-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Stress Management </strong></h5>
+                    <p class="card-text"> Practice stress-reduction techniques such as meditation, yoga, or deep breathing exercises. Stress can exacerbate symptoms of hyperthyroidism. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 6-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Regular Check-ups </strong></h5>
+                    <p class="card-text"> Schedule regular follow-up appointments with your healthcare provider to monitor thyroid hormone levels and assess the effectiveness of treatment. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 7-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Avoid Stimulants </strong></h5>
+                    <p class="card-text"> Limit caffeine intake as it can exacerbate symptoms like nervousness and palpitations associated with hyperthyroidism. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 8-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Limit Exposure to Radiation </strong></h5>
+                    <p class="card-text"> Minimize exposure to radiation, especially if undergoing radioactive iodine treatment. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- </section> -->
+<h2 align = "left"><strong> Dietary Tips For Hyperthyroid </strong></h2>
+    <br>
+    <div class="row">
+        <!-- Tip boxes -->
+
+        <!--Tip 1-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Moderate Iodine Intake </strong> </h5>
+                    <p class="card-text"> While iodine is essential for thyroid function, excessive amounts can exacerbate hyperthyroidism. Avoid high-iodine foods like seaweed, iodized salt, seafood, and dairy products. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 2-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Reduce Stimulants </strong> </h5>
+                    <p class="card-text"> Limit caffeine intake as it can stimulate the thyroid gland and worsen symptoms. This includes coffee, tea, and certain energy drinks. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 3-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Limit Goitrogenic Foods </strong></h5>
+                    <p class="card-text"> Similar to hypothyroidism, minimize goitrogenic foods like broccoli, cauliflower, cabbage, kale, and soy products, as they can interfere with thyroid function. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 4-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Balanced Diet </strong></h5>
+                    <p class="card-text"> Emphasize a well-balanced diet with a variety of nutrient-dense foods. Focus on lean proteins, healthy fats, and complex carbohydrates from whole grains, fruits, and vegetables. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 5-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Avoid Excessive Iodine Supplements </strong></h5>
+                    <p class="card-text">  Refrain from taking iodine supplements unless specifically advised by a healthcare professional. Excess iodine can aggravate hyperthyroidism. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 6-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Consider Calcium & Vitamin D </strong></h5>
+                    <p class="card-text"> Some medications for hyperthyroidism can affect bone health. Ensure adequate calcium and vitamin D intake through dairy products, leafy greens, fortified foods, and supplements if needed. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tip 7-->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body bg-tips">
+                    <h5 class="card-title"><strong> Frequent, Smaller Meals </strong></h5>
+                    <p class="card-text"> Eating smaller, more frequent meals throughout the day can help stabilize energy levels and prevent spikes in metabolism. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p><h2>Physical Wellness</h2></p>
+    <p>
+        Yoga asanas are considered to be an effective natural remedy for dealing with thyroid disorders. While it may not be able to cure the condition instantly, it can help in keeping the glands healthy and regulate metabolism, thereby preventing any further complications. A study stated that 6 months of intense yoga helped women with hypothyroidism and reduced their need for thyroxine medication.
+    Here are a few yoga asanas which can help in effectively reducing hypothyroidism. These yoga poses can help in strengthening muscles and also reducing effects of hypothyroidism on the body.
+    </p>
+                    <!-- <p>1. Viparita Karani (Inverted Pose)</p>
+                    <img src="{{ url_for('static', filename='images/yoga.jpg') }}" class="yoga" alt="Yoga Image"> -->
+
+                    <p>1. Balasana (Child's Pose)</p>
+                    <p>Balasana, commonly known as Child's Pose, is a soothing yoga posture that gently stretches the spine, hips, and thighs. It promotes relaxation, releases tension in the back, and fosters a sense of calm and introspection.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga9.jpg') }}" class="yoga" alt="Yoga Image"> 
+
+                    <p>2. Sarvangasana (shoulder stand)</p>
+                    <p>
+                        Sarvangasana or shoulder stand helps in maintaining the governing system of the body - the endocrine system. It exerts pressure on the thyroid gland. Thyroid gland receives the largest supply of blood. Sarvangasana helps in improving blood circulation and squeezing stagnant secretion. It releases blood into the neck and helps nourish the thyroid and reversing hypothyroidism.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga2.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p>3. Ustrasana (Camel Pose)</p>
+                    <p>
+                        This pose too can stimulate the thyroid gland by stretching the neck and increasing blood circulation in the gland. Practicing this yoga pose for thyroid can also help in relieving issues of the spine. It also helps in bringing relief to people suffering from asthma. However, this pose should be avoided I case you have hernia or ulcers. People with arthritis, vertigo and abdominal injuries should avoid doing the camel pose.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga3.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p>4. Setu Bandhasana (bridge pose)</p>
+                    <p>
+                        Setu bandhasana or the bridge pose is an effective yoga for thyroid, especially hypothyroidism. It stretches the neck and improves blood circulation in the thyroid gland. The pose is also effective for treating asthma, reducing headaches and strengthening muscles. People in the final stage of their pregnancy should avoid doing the bridge pose.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga4.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p>5. Halasana (plough pose)</p>
+                    <p>
+                        This pose helps in stretching of the neck and stimulates the thyroid glands. However, this pose must not be performed by people with hyperthyrodisim as it facilitates secretion of thyroid hormones. This pose also helps in strengthening abdominal muscles and back muscles along with relaxing the autonomous nervous systems.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga5.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <p>6. Matsyasana (fish pose)</p>
+                    <p>
+                        Matsyasana or fish pose makes your back arch in a way that it increased blood circulation in the thyroid gland. This pose stretches the neck and throat and stimulates the thyroid gland. It relieves a lot of tension in the area. The pose is done by inverting the head. This encourages blood flow to the thyroid gland and is thus good for people suffering from hypothyroidism. This pose also helps in maintaining health of abdominal muscles and the spinal column.
+                    </p>
+                    <img src="{{ url_for('static', filename='images/yoga6.jpg') }}" class="yoga" alt="Yoga Image">
+
+                    <!-- <p>7. Dhanurasana (bow pose)</p>
+                    <img src="{{ url_for('static', filename='images/yoga7.jpg') }}" class="yoga" alt="Yoga Image"> -->
+
+                    <!-- <p>8. Bhujangasana (cobra pose)</p>
+                    <img src="{{ url_for('static', filename='images/yoga8.jpg') }}" class="yoga" alt="Yoga Image"> -->
+
+<!-- </section> -->
+        {% else %}
+            <p id="no-tips">No specific tips available for this prediction result.</p>
+        {% endif %}
+        <a href="./tips.html">More Tips</a>
+    </div>
+</body>
+
+</html>
+
+
+<style>
+    body{
+        background-color: white;
+        background-image: url("{{ url_for('static', filename='images/cloud1.jpg') }}");
+        background-size: contain;
+        /* background-image: linear-gradient(to top,#2E86C1, #2471A3); */
+        
+        font-family: 'Open Sans', Arial;
+        font-family: 'Arial', sans-serif;
+        /* background-color: #f5f5f5; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #070707;
+    }
+
+    h2 {
+        color: #595858;
+    }
+
+    p {
+        color: #131313;
+    }
+
+    
+
+    a {
+        color: #007BFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .col-lg-4 {
+        display: flex;
+        /*max-width: 33.333333%; */
+        padding: 15px;
+        align-items: center;
+        /* margin-left: 100px; */
+    }
+
+    .card {
+        /* background-color: #fff; */
+        border: 1px solid #1c0707;
+        border-radius: 5px;
+        width: 300px;
+        height: 180px;
+        padding-left: 10px;
+        box-shadow: 0 0 10px #1c0707;
+        overflow: hidden;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        color: #555;
+    }
+    /* .bg-tips {
+        background-color: #f8f9fa;
+    } */
+
+    hr {
+        border: 0;
+        clear: both;
+        display: block;
+        width: 100%;
+        /* background-color: #ddd; */
+        height: 1px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .yoga{
+        height: 500px;
+        width: 500px;
+    }
+
+    #pred{
+        font-weight: bolder;
+    }
+</style>
