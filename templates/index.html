@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="login">
+    <h1>Thyroid Prediction</h1>
+
+    <!-- Main Input For Receiving Query to our ML -->
+
+    <!-- Add id attribute to the form tag -->
+    <form id="predictionForm" action="{{ url_for('predict')}}" method="post">
+    <!-- Your form elements here -->
+
+  
+
+    <!-- <form action="{{ url_for('predict')}}" method="post"> -->
+      <label for="age">Age:</label>
+      <input type="text" name="age" placeholder="age" required="required" />
+
+      <label for="gender">Gender</label>
+      <select name="gender" id="genderSelect" required="required">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+
+      <div id="pregnantField" style="display:none;">
+        <label for="Pregnant">Pregnant:</label>
+        <select name="Pregnant" required="required">
+          <option value="y">Yes</option>
+          <option value="n">No</option>
+        </select>
+      </div>
+
+      <label for="Tsh measured">Tsh measured:</label>
+      <select name="Tsh measured" required="required">
+        <option value="y">Yes</option>
+        <option value="n">No</option>
+      </select>
+
+      <label for="Level">Tsh level:</label>
+      <input type="text" name="Level" placeholder="Level" required="required" />
+      <label for="T3 measured">T3 measured:</label>
+      <select name="T3 measured" required="required">
+        <option value="y">Yes</option>
+        <option value="n">No</option>
+      </select>
+      <label for="T3 Level">T3 Level:</label>
+      <input type="text" name="T3 Level" placeholder="T3Level" required="required" />
+      <label for="Tt4">TT4 measured:</label>
+      <select name="Tt4" required="required">
+        <option value="y">Yes</option>
+        <option value="n">No</option>
+      </select>
+      <label for="Tt4 level">TT4 level:</label>
+      <input type="text" name="Tt4 level" placeholder="Tt4 level" required="required" />
+      <label for="T4u">T4U measured:</label>
+      <select name="T4u" required="required">
+        <option value="y">Yes</option>
+        <option value="n">No</option>
+      </select>
+      <label for="T4u level">T4U level:</label>
+      <input type="text" name="T4u level" placeholder="T4u level" required="required" />
+      <!-- <label for="fti">FTI:</label>
+      <input type="text" name="fti" placeholder="fti" required="required" /> -->
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+
+
+
+ 
+  </div>
+
+
+</body>
+
+</html>
+
+<script>
+  document.getElementById('genderSelect').addEventListener('change', function () {
+          var pregnantField = document.getElementById('pregnantField');
+          pregnantField.style.display = (this.value === 'F') ? 'block' : 'none';
+        });
+        window.onclick = function (event) {
+                var popupContainer = document.getElementById('popupContainer');
+                if (event.target === popupContainer) {
+                    popupContainer.style.display = 'none';
+                }
+            };
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: justify;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-image: url("e1ffe8ee-1bee-4916-8a43-83de879270d0.jpg"); */
+  background-size:auto;
+  box-sizing: border-box;
+  /* background-image: url("doc.jpg"); */
+  background-image: url("{{ url_for('static', filename='images/img.jpg') }}");
+}
+
+.login {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="radio"] {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+/* Style for the select element */
+select {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+
+}
+
+/* Style for the dropdown arrow */
+select:after {
+    content: '\25BC'; /* Unicode character for a down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+/* Style for dropdown options */
+option {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Style for the hover effect on options */
+option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style for the focus state on the select element */
+select:focus {
+    outline: none;
+    border-color: grey; /* Change the color on focus if needed */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Change the box shadow on focus if needed */
+}
+
+.popup-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 50px;
+        right: 50px;
+        /* width: 100%; */
+        height: 100%;
+        /*background: rgba(128, 0, 128, 0.7); / Purple background color with some transparency */
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        top: 50%;
+    }
+
+    /* Styles for the popup content */
+    .popup-content {
+        background-color: rgb(208, 191, 255);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+
+</style>
