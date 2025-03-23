@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "quicksand",sans-serif;
+    border: border-box;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.bg-navbar
+{
+    background-color: #2B5293;
+    color: #000;
+}
+.start-assessment-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Set the height to fill the viewport */
+}
+
+.start-assessment-button a {
+    text-align: center;
+    font-size: 24px; /* Adjust the font size as needed */
+    padding: 20px 40px; /* Adjust the padding as needed */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    background-color: #2B5293; /* Add background color */
+    color: #fff; /* Set text color to white */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.start-assessment-button a:hover {
+    background-color: #1c3a6c; /* Darken the background color on hover */
+}
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.why-assessment {
+    position: absolute;
+    top: 48%;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: black; /* Text color */
+    max-width: 400px;
+    /* background-color: #E3F2FD; /* Add background color */
+    /* border-radius: 20px;  */ 
+}
+.why-assessment h3,
+.why-assessment p {
+    margin: 10px 0;
+    line-height: 1.5;
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+.why-assessment h3 {
+    animation-delay: 0.5s; /* Delay animation for heading */
+}
+
+.why-assessment p {
+    font-size: 17px;
+    animation-delay: 1.5s; /* Delay animation for paragraph text */
+}
+.wrapper{
+    max-width: 75%;
+    margin:auto;
+}
+#faq{
+    margin-top: 25px;
+}
+.wrapper > p,
+.wrapper > h1
+{
+    margin:1.5rem 0;
+    text-align: center;
+}
+.wrapper>h1{
+    letter-spacing: 3px;
+}
+.accordion{
+    background-color: white;
+    color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width:100%;
+    padding:2rem 2.5rem;
+    border:none;
+    outline:none;
+    transition:0.4s;
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-weight: bold;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+.active,
+.accordion:hover{
+    background-color: #f1f7f5;
+
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    padding: 0 2rem 2.5rem 2rem;
+}
+.panel p{
+    color: rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.faq{
+    border: 1px solid rgba(0,0,0,0.1);
+    margin:10px 0;
+}
+.faq.active{
+    border: none;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 0.5px;
+    text-align: center;
+}
+.footerBottom pre{
+    color:white;
+}

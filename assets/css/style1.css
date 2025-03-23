@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding:0;
+    border: border-box;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+body.dark-mode
+{
+    background-color: #333;
+    color: #fff;
+}
+
+.bg-navbar
+{
+    background-color: #2B5293;
+    color: #000;
+}
+
+
+#login-div{
+    display: flex;
+    background-color: #0B60B0;
+    height: 51px;
+    width: 120px;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 10px;
+  }
+  #log{
+    margin-left: 28px;
+    text-decoration: none;
+    color: white;
+    font: 17px Rubik, sans-serif;
+    font-weight: 700;
+  }
+
+body.dark-mode .bg-navbar
+{
+    background-color: red;
+
+}
+
+#logo
+{
+    height: 60px;
+    width: 60px;
+}
+
+#thyro{
+    display:flex;
+    align-items: center;
+}
+#abcd {
+    /* gin-left: 10px; */
+    /* margmarin-top: 5px; */
+    /* height:40px; */
+    font: Rubik sans-serif;
+    margin: 2px 0px 0px 0px;
+    color:white;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+nav
+{
+    background-color: #2B5293;
+    height: 100px;
+    width: 100%;
+}
+.navbar-list {
+      all: unset;
+      display: block;
+    }
+div.container
+{
+    padding: 0 100px;
+    line-height: 80px;
+    font: 18px Rubik, sans-serif;
+}
+/* header{
+    position: sticky;
+    top: 0px;
+}
+.nav{
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+}
+
+.butfly{
+    height:60px;
+    width:60px;
+    background-size: contain;
+    background-image: url("icons8-butterfly-48.png");
+}
+.logo{
+    height:60px;
+    width:160px;
+    background-size: contain;
+    background-image: url("ThyroAlert-logos_(2)~2.jpeg");
+}
+.names{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: larger;
+    background-color: #2b5293;
+    color:  white;
+    height:35px;
+}
+a{
+    text-decoration: none;
+    color: #D7D7CF;
+}
+.hov{
+    color: transparent;
+}
+.hov:hover {
+    color: white;
+    
+}  */
+
+main{
+    margin-left: 150px;
+    margin-right:150px;
+    line-height: 35px;
+    text-align: start;
+}
+#mainhead{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.img{
+    height: 500px;
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+.txt{
+    display: flex;
+}
+.image{
+    margin-left: 200px;
+    height: 500px;
+    width: 400px;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 0.5px;
+    text-align: center;
+}
+.footerBottom pre{
+    color:white;
+}
